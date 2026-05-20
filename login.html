@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-slate-100 min-h-screen flex items-center justify-center px-4 py-10">
+    <main class="w-full max-w-md bg-white rounded-[32px] shadow-[0_40px_120px_rgba(15,23,42,0.08)] p-8">
+      <div class="flex flex-col items-center text-center">
+        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-3xl bg-blue-50">
+          <img src="images/unlock.png" alt="Lock icon" class="w-8 h-8 text-blue-600" />
+        </div>
+        <h1 class="text-3xl font-extrabold text-slate-900 mb-2">Welcome Back</h1>
+        <p class="text-sm text-slate-500 max-w-[22rem]">Enter your credentials to access your account.</p>
+      </div>
+
+      <form action="" class="mt-8 space-y-4">
+        <div class="space-y-2">
+          <label for="email" class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Email Address</label>
+          <input id="email" name="email" type="email" placeholder="name@company.com" class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-blue-400 focus:ring-2 focus:ring-blue-100" />
+        </div>
+
+        <div class="space-y-2">
+          <label for="password" class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Password</label>
+          <input id="password" name="password" type="password" placeholder="••••••••" class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-blue-400 focus:ring-2 focus:ring-blue-100" />
+        </div>
+
+        <div class="flex items-center justify-between text-sm text-slate-500">
+          <label class="inline-flex items-center gap-2">
+            <input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500" />
+            Remember me
+          </label>
+          <a href="#" class="font-semibold text-blue-600 hover:text-blue-700">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="w-full rounded-2xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-500">Log In →</button>
+      </form>
+
+      <p class="mt-6 text-center text-sm text-slate-500">Don’t have an account yet? <a href="register.html" class="font-semibold text-blue-600 hover:text-blue-700">Sign up for free</a></p>
+    </main>
+  </body>
+</html>
